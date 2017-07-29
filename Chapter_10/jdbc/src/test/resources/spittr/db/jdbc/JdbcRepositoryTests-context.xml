@@ -6,7 +6,7 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-  <jdbc:embedded-database id="dataSource" type="H2">
+  <!--jdbc:embedded-database id="dataSource" type="H2">
     <jdbc:script location="classpath:spittr/db/jdbc/schema.sql" />
     <jdbc:script location="classpath:spittr/db/jdbc/test-data.sql" />
   </jdbc:embedded-database>
@@ -23,6 +23,6 @@
 
   <bean id="transactionManager"
         class="org.springframework.jdbc.datasource.DataSourceTransactionManager" 
-        c:_-ref="dataSource" />
+        c:_-ref="dataSource" /-->
  
 </beans>

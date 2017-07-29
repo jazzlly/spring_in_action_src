@@ -22,7 +22,8 @@ public class JdbcConfig {
   public DataSource dataSource() {
     return new EmbeddedDatabaseBuilder()
       .setType(EmbeddedDatabaseType.H2)
-      .addScripts("classpath:spittr/db/jdbc/schema.sql", "classpath:spittr/db/jdbc/test-data.sql")
+      .addScripts("classpath:spittr/db/jdbc/schema.sql",
+              "classpath:spittr/db/jdbc/test-data.sql")
       .build();
   }
   
