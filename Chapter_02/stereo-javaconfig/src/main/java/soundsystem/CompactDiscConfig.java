@@ -3,10 +3,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class CDPlayerConfig {
+public class CompactDiscConfig {
   @Bean
-  public CDPlayer cdPlayer(CompactDisc compactDisc) {
-    return new CDPlayer(compactDisc);
+  public CompactDisc compactDisc() {
+    return new SgtPeppers();
   }
-
 }

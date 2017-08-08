@@ -1,11 +1,17 @@
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
+apply plugin: 'maven'
 
 jar {
     baseName = 'knight'
     version =  '0.0.1-SNAPSHOT'
 }
+
+group = 'com.sia.db'
+version = '1.0'
+sourceCompatibility = 1.8
+
 
 repositories {
     mavenLocal()
