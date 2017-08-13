@@ -1,0 +1,64 @@
+2017-08-13 14:40:57,831 DEBUG [main] (CglibAopProxy.java:779) - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isExposeProxy()
+2017-08-13 14:40:57,832 DEBUG [main] (CglibAopProxy.java:779) - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvice(int,org.aopalliance.aop.Advice) throws org.springframework.aop.framework.AopConfigException
+2017-08-13 14:40:57,832 DEBUG [main] (CglibAopProxy.java:779) - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvice(org.aopalliance.aop.Advice) throws org.springframework.aop.framework.AopConfigException
+2017-08-13 14:40:57,833 DEBUG [main] (CglibAopProxy.java:779) - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isPreFiltered()
+2017-08-13 14:40:57,833 DEBUG [main] (CglibAopProxy.java:779) - Method is declared on Advised interface: public abstract java.lang.Class[] org.springframework.aop.framework.Advised.getProxiedInterfaces()
+2017-08-13 14:40:57,833 DEBUG [main] (CglibAopProxy.java:779) - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isInterfaceProxied(java.lang.Class)
+2017-08-13 14:40:57,833 DEBUG [main] (CglibAopProxy.java:779) - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.removeAdvisor(org.springframework.aop.Advisor)
+2017-08-13 14:40:57,834 DEBUG [main] (CglibAopProxy.java:779) - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.removeAdvisor(int) throws org.springframework.aop.framework.AopConfigException
+2017-08-13 14:40:57,834 DEBUG [main] (CglibAopProxy.java:779) - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.replaceAdvisor(org.springframework.aop.Advisor,org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+2017-08-13 14:40:57,834 DEBUG [main] (CglibAopProxy.java:779) - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.removeAdvice(org.aopalliance.aop.Advice)
+2017-08-13 14:40:57,835 DEBUG [main] (CglibAopProxy.java:779) - Method is declared on Advised interface: public abstract java.lang.String org.springframework.aop.framework.Advised.toProxyConfigString()
+2017-08-13 14:40:57,835 DEBUG [main] (CglibAopProxy.java:779) - Method is declared on Advised interface: public abstract org.springframework.aop.Advisor[] org.springframework.aop.framework.Advised.getAdvisors()
+2017-08-13 14:40:57,835 DEBUG [main] (CglibAopProxy.java:779) - Method is declared on Advised interface: public abstract java.lang.Class org.springframework.aop.TargetClassAware.getTargetClass()
+2017-08-13 14:40:57,847 DEBUG [main] (AbstractAutowireCapableBeanFactory.java:477) - Finished creating instance of bean 'seller'
+2017-08-13 14:40:57,847 DEBUG [main] (DefaultSingletonBeanRegistry.java:220) - Creating shared instance of singleton bean 'waiterManager'
+2017-08-13 14:40:57,847 DEBUG [main] (AbstractAutowireCapableBeanFactory.java:449) - Creating instance of bean 'waiterManager'
+2017-08-13 14:40:57,848 DEBUG [main] (AbstractAutowireCapableBeanFactory.java:523) - Eagerly caching bean 'waiterManager' to allow for resolving potential circular references
+2017-08-13 14:40:57,850 DEBUG [main] (AbstractBeanFactory.java:247) - Returning cached instance of singleton bean 'com.baobaotao.aspectj.fun.TestAspect#0'
+2017-08-13 14:40:57,851 DEBUG [main] (AbstractAutoProxyCreator.java:593) - Creating implicit proxy for bean 'waiterManager' with 0 common interceptors and 2 specific interceptors
+2017-08-13 14:40:57,851 DEBUG [main] (CglibAopProxy.java:158) - Creating CGLIB proxy: target source is SingletonTargetSource for target object [com.baobaotao.WaiterManager@7494f96a]
+2017-08-13 14:40:57,852 DEBUG [main] (CglibAopProxy.java:822) - Unable to apply any optimisations to advised method: public void com.baobaotao.WaiterManager.addNaiveWaiter(com.baobaotao.NaiveWaiter)
+2017-08-13 14:40:57,852 DEBUG [main] (CglibAopProxy.java:822) - Unable to apply any optimisations to advised method: public void com.baobaotao.WaiterManager.addWaiter(com.baobaotao.Waiter)
+2017-08-13 14:40:57,852 DEBUG [main] (CglibAopProxy.java:773) - Found finalize() method - using NO_OVERRIDE
+2017-08-13 14:40:57,852 DEBUG [main] (CglibAopProxy.java:785) - Found 'equals' method: public boolean java.lang.Object.equals(java.lang.Object)
+2017-08-13 14:40:57,853 DEBUG [main] (CglibAopProxy.java:822) - Unable to apply any optimisations to advised method: public java.lang.String java.lang.Object.toString()
+2017-08-13 14:40:57,853 DEBUG [main] (CglibAopProxy.java:790) - Found 'hashCode' method: public native int java.lang.Object.hashCode()
+2017-08-13 14:40:57,853 DEBUG [main] (CglibAopProxy.java:822) - Unable to apply any optimisations to advised method: protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException
+2017-08-13 14:40:57,853 DEBUG [main] (CglibAopProxy.java:779) - Method is declared on Advised interface: public abstract int org.springframework.aop.framework.Advised.indexOf(org.springframework.aop.Advisor)
+2017-08-13 14:40:57,853 DEBUG [main] (CglibAopProxy.java:779) - Method is declared on Advised interface: public abstract int org.springframework.aop.framework.Advised.indexOf(org.aopalliance.aop.Advice)
+2017-08-13 14:40:57,854 DEBUG [main] (CglibAopProxy.java:779) - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isFrozen()
+2017-08-13 14:40:57,854 DEBUG [main] (CglibAopProxy.java:779) - Method is declared on Advised interface: public abstract org.springframework.aop.TargetSource org.springframework.aop.framework.Advised.getTargetSource()
+2017-08-13 14:40:57,854 DEBUG [main] (CglibAopProxy.java:779) - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isProxyTargetClass()
+2017-08-13 14:40:57,854 DEBUG [main] (CglibAopProxy.java:779) - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvisor(int,org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+2017-08-13 14:40:57,854 DEBUG [main] (CglibAopProxy.java:779) - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvisor(org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+2017-08-13 14:40:57,855 DEBUG [main] (CglibAopProxy.java:779) - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setTargetSource(org.springframework.aop.TargetSource)
+2017-08-13 14:40:57,855 DEBUG [main] (CglibAopProxy.java:779) - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setPreFiltered(boolean)
+2017-08-13 14:40:57,855 DEBUG [main] (CglibAopProxy.java:779) - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setExposeProxy(boolean)
+2017-08-13 14:40:57,855 DEBUG [main] (CglibAopProxy.java:779) - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isExposeProxy()
+2017-08-13 14:40:57,855 DEBUG [main] (CglibAopProxy.java:779) - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvice(int,org.aopalliance.aop.Advice) throws org.springframework.aop.framework.AopConfigException
+2017-08-13 14:40:57,855 DEBUG [main] (CglibAopProxy.java:779) - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvice(org.aopalliance.aop.Advice) throws org.springframework.aop.framework.AopConfigException
+2017-08-13 14:40:57,856 DEBUG [main] (CglibAopProxy.java:779) - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isPreFiltered()
+2017-08-13 14:40:57,856 DEBUG [main] (CglibAopProxy.java:779) - Method is declared on Advised interface: public abstract java.lang.Class[] org.springframework.aop.framework.Advised.getProxiedInterfaces()
+2017-08-13 14:40:57,857 DEBUG [main] (CglibAopProxy.java:779) - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isInterfaceProxied(java.lang.Class)
+2017-08-13 14:40:57,857 DEBUG [main] (CglibAopProxy.java:779) - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.removeAdvisor(org.springframework.aop.Advisor)
+2017-08-13 14:40:57,857 DEBUG [main] (CglibAopProxy.java:779) - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.removeAdvisor(int) throws org.springframework.aop.framework.AopConfigException
+2017-08-13 14:40:57,858 DEBUG [main] (CglibAopProxy.java:779) - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.replaceAdvisor(org.springframework.aop.Advisor,org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+2017-08-13 14:40:57,858 DEBUG [main] (CglibAopProxy.java:779) - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.removeAdvice(org.aopalliance.aop.Advice)
+2017-08-13 14:40:57,859 DEBUG [main] (CglibAopProxy.java:779) - Method is declared on Advised interface: public abstract java.lang.String org.springframework.aop.framework.Advised.toProxyConfigString()
+2017-08-13 14:40:57,859 DEBUG [main] (CglibAopProxy.java:779) - Method is declared on Advised interface: public abstract org.springframework.aop.Advisor[] org.springframework.aop.framework.Advised.getAdvisors()
+2017-08-13 14:40:57,859 DEBUG [main] (CglibAopProxy.java:779) - Method is declared on Advised interface: public abstract java.lang.Class org.springframework.aop.TargetClassAware.getTargetClass()
+2017-08-13 14:40:57,868 DEBUG [main] (AbstractAutowireCapableBeanFactory.java:477) - Finished creating instance of bean 'waiterManager'
+2017-08-13 14:40:57,869 DEBUG [main] (AbstractBeanFactory.java:247) - Returning cached instance of singleton bean 'com.baobaotao.aspectj.fun.TestAspect#0'
+2017-08-13 14:40:57,869 DEBUG [main] (DefaultSingletonBeanRegistry.java:220) - Creating shared instance of singleton bean 'com.baobaotao.aspectj.fun.EnableSellerAspect#0'
+2017-08-13 14:40:57,869 DEBUG [main] (AbstractAutowireCapableBeanFactory.java:449) - Creating instance of bean 'com.baobaotao.aspectj.fun.EnableSellerAspect#0'
+2017-08-13 14:40:57,869 DEBUG [main] (AbstractAutowireCapableBeanFactory.java:523) - Eagerly caching bean 'com.baobaotao.aspectj.fun.EnableSellerAspect#0' to allow for resolving potential circular references
+2017-08-13 14:40:57,870 DEBUG [main] (AbstractAutowireCapableBeanFactory.java:477) - Finished creating instance of bean 'com.baobaotao.aspectj.fun.EnableSellerAspect#0'
+2017-08-13 14:40:57,872 DEBUG [main] (AbstractApplicationContext.java:702) - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@15ca7889]
+2017-08-13 14:40:57,872 DEBUG [main] (AbstractBeanFactory.java:247) - Returning cached instance of singleton bean 'lifecycleProcessor'
+2017-08-13 14:40:57,881 DEBUG [main] (PropertySourcesPropertyResolver.java:81) - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+2017-08-13 14:40:57,881 DEBUG [main] (PropertySourcesPropertyResolver.java:81) - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+2017-08-13 14:40:57,882 DEBUG [main] (PropertySourcesPropertyResolver.java:103) - Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
+2017-08-13 14:40:57,882 DEBUG [main] (AbstractBeanFactory.java:247) - Returning cached instance of singleton bean 'naiveWaiter'
+2017-08-13 14:40:57,882 DEBUG [main] (AbstractBeanFactory.java:247) - Returning cached instance of singleton bean 'naughtyWaiter'
+2017-08-13 14:40:57,887 DEBUG [main] (AbstractBeanFactory.java:247) - Returning cached instance of singleton bean 'com.baobaotao.aspectj.fun.TestAspect#0'
