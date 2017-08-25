@@ -2,11 +2,25 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.springframework.org/schema/beans 
-      http://www.springframework.org/schema/beans/spring-beans.xsd">
+      http://www.springframework.org/schema/beans/spring-beans.xsd"
+       default-lazy-init="true" >
 
-  <bean id="knight" class="sia.knights.BraveKnight">
-    <constructor-arg ref="quest" />
-  </bean>
+    <description>just for test</description>
+
+    <alias name="knight1" alias="k1"/>
+    <alias name="knight2" alias="k2"/>
+    <alias name="quest" alias="qst"/>
+
+    <bean id="knight1" name="father" class="sia.knights.BraveKnight">
+        <constructor-arg ref="quest" />
+        <property name="quest" ref="quest" />
+        <qualifier value="123" />
+        <qualifier value="abc" type="org.springframework.beans.factory.annotation.Qualifier"/>
+        <!--<replaced-method />-->
+        <meta key="abc" value="123" />
+    </bean>
+
+  <bean id="knight2" name="braveKnight" parent="knight1"/>
 
   <bean id="quest" class="sia.knights.SlayDragonQuest">
     <constructor-arg value="#{T(System).out}" />

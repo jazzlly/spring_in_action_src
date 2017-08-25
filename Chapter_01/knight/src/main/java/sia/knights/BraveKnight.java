@@ -4,6 +4,9 @@ public class BraveKnight implements Knight {
 
   private Quest quest;
 
+  public BraveKnight() {
+  }
+
   public BraveKnight(Quest quest) {
     this.quest = quest;
   }
@@ -12,4 +15,7 @@ public class BraveKnight implements Knight {
     quest.embark();
   }
 
+  public void setQuest(Quest quest) {
+    this.quest = quest;
+  }
 }

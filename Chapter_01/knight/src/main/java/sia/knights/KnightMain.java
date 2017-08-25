@@ -15,13 +15,19 @@ public class KnightMain {
   public static void main(String[] args) throws Exception {
     ClassPathXmlApplicationContext context = 
         new ClassPathXmlApplicationContext(
-            "META-INF/spring/simple.xml");
+            "META-INF/spring/knight.xml");
 
-    Knight knight = context.getBean(Knight.class);
-    knight.embarkOnQuest();
+    Knight knight1 = (Knight) context.getBean("knight1");
+    knight1.embarkOnQuest();
+
+    Knight knight2 = (Knight) context.getBean("knight2");
+    knight2.embarkOnQuest();
+
+    Knight k1 = (Knight) context.getBean("k1");
+    k1.embarkOnQuest();
     context.close();
 
-    test();
+    // test();
 //    AnnotationConfigApplicationContext annoContext =
 //            new AnnotationConfigApplicationContext();
 //    annoContext.scan("sia.knights.config");
@@ -41,6 +47,10 @@ public class KnightMain {
     System.out.println(Arrays.toString(factory.getBeanDefinitionNames()));
 
   }
+
+  static void testRegisterAlias() {
+  }
+
 
 
 }
