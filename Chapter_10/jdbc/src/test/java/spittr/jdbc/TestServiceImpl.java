@@ -3,6 +3,7 @@ package spittr.jdbc;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.sql.Connection;
@@ -18,6 +19,9 @@ public class TestServiceImpl implements TestService {
 
     @Autowired
     private JdbcTemplate jdbcTemplate;
+
+    @Autowired
+    private TestServiceInner testServiceInner;
 
     public TestServiceImpl() {
     }
@@ -50,13 +54,16 @@ public class TestServiceImpl implements TestService {
         }
     }
 
-    @Transactional
+    @Transactional(propagation = Propagation.REQUIRED)
     public void smoke2() throws SQLException {
-        jdbcTemplate.execute("DROP TABLE IF EXISTS Greetings");
-        jdbcTemplate.execute("CREATE TABLE IF NOT EXISTS Greetings (Message CHAR(20))");
+        // jdbcTemplate.execute("DROP TABLE IF EXISTS Greetings");
+        // jdbcTemplate.execute("CREATE TABLE IF NOT EXISTS Greetings (Message CHAR(20))");
+        jdbcTemplate.execute("DELETE FROM Greetings");
         jdbcTemplate.execute("INSERT INTO Greetings VALUES ('Hello, World!')");
         jdbcTemplate.execute("INSERT INTO Greetings VALUES ('Hello, World 1!')");
         jdbcTemplate.execute("INSERT INTO Greetings VALUES ('Hello, World 2!')");
         jdbcTemplate.execute("INSERT INTO Greetings VALUES ('Hello, World 3!')");
+
+        testServiceInner.smokeNested();
     }
 }
