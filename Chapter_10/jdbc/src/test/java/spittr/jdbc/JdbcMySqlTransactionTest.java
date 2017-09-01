@@ -1,5 +1,7 @@
 package spittr.jdbc;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,11 +15,15 @@ import java.sql.*;
 @ContextConfiguration(classes=JdbcMySqlConfig.class)
 public class JdbcMySqlTransactionTest {
 
-    @Autowired
-    DataSource dataSource;
+    protected transient Log logger = LogFactory.getLog(getClass());
 
     @Autowired
     TestService testService;
+
+    @Test
+    public void smokeTransaction1() throws Exception {
+        testService.smoke1();
+    }
 
     @Test
     public void smokeTransaction() throws Exception {
