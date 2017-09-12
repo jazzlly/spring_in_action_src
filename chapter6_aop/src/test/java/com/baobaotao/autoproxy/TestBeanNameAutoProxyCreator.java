@@ -8,7 +8,7 @@ import com.baobaotao.advisor.Waiter;
 
 public class TestBeanNameAutoProxyCreator {
 	public static void main(String[] args) {
-		String configPath = "com/baobaotao/autoproxy/beans.xml";
+		String configPath = "autoproxy.xml";
 		ApplicationContext ctx = new ClassPathXmlApplicationContext(configPath);
 		Waiter waiter = (Waiter) ctx.getBean("waiter");
 		Seller seller = (Seller) ctx.getBean("seller");

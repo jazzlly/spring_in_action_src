@@ -5,7 +5,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class TestDynamicAdvisor {
 	public static void main(String[] args) {
-		String configPath = "com/baobaotao/advisor/beans.xml";
+		String configPath = "advisor_config.xml";
+
 		ApplicationContext ctx = new ClassPathXmlApplicationContext(configPath);
 		Waiter waiter = (Waiter) ctx.getBean("waiter2");		
 		waiter.serveTo("Peter");

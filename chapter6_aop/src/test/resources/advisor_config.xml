@@ -28,6 +28,7 @@
         <property name="patterns">
             <list>
                 <value>.*greet.*</value>
+                <value>.*serve.*</value>
             </list>
         </property>
     </bean>
@@ -45,7 +46,6 @@
             <bean class="com.baobaotao.advisor.GreetingBeforeAdvice" />
         </property>
     </bean>
-
 
     <bean id="waiter2" class="org.springframework.aop.framework.ProxyFactoryBean"
           p:interceptorNames="dynamicAdvisor" p:target-ref="waiterTarget"

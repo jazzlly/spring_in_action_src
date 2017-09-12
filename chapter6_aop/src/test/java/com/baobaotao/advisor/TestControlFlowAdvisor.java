@@ -5,7 +5,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class TestControlFlowAdvisor {
 	public static void main(String[] args) {
-		String configPath = "com/baobaotao/advisor/beans.xml";
+		String configPath = "advisor_config.xml";
 		ApplicationContext ctx = new ClassPathXmlApplicationContext(configPath);
 		Waiter waiter = (Waiter) ctx.getBean("waiter3");
 		WaiterDelegate wd = new WaiterDelegate();
