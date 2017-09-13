@@ -8,14 +8,13 @@ import com.baobaotao.Waiter;
 public class AspectJProxyTest {
 	public static void main(String[] args) {
 
-		// create target
-		Waiter target = new NaiveWaiter();
 		// create factory
 		AspectJProxyFactory factory = new AspectJProxyFactory();
 		// set target
-		factory.setTarget(target);
+		factory.setTarget(new NaiveWaiter());
 		// add aspect
 		factory.addAspect(PreGreetingAspect.class);
+
 		// create proxy object
 		Waiter proxy = factory.getProxy();
 		proxy.greetTo("John");
